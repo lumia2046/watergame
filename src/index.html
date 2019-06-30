@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <script>
+    (function (win) {
+      const _view = {};
+
+      _view.dpr = win.devicePixelRatio;//移动端屏幕dpr
+      _view.scale = 1 / _view.dpr || 1;// 缩放比例（meta标签的scale值）
+      _view.fz = 100;// 根目录font-size
+      _view.doc = win.document;
+      _view.docEl = _view.doc.documentElement;
+      _view.metaContent = '';
+      _view.resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+      _view.metaContent = 'initial-scale=' + _view.scale
+        + ', maximum-scale=' + _view.scale
+        + ', minimum-scale=' + _view.scale +
+        ', width=device-width, user-scalable=no';
+
+      // 根据屏幕大小及dpi调整缩放和大小
+      _view.doc.querySelector('meta[name="viewport"]').setAttribute('content', _view.metaContent);
+
+      _view.setFZ = function () {
+        _view.fz = _view.docEl.getBoundingClientRect().width * 100 / 750;// 750是设计稿宽度，100是相对750宽度时的font-size
+        _view.docEl.setAttribute("style", "font-size:" + _view.fz + "px");
+      };
+
+      _view.setFZ();
+
+      window.addEventListener(_view.resizeEvt, _view.setFZ, false);
+      document.addEventListener('DOMContentLoaded', _view.setFZ, false);
+    })(window);
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+
+</head>
+<!-- <script src="lrz/lrz.bundle.js"></script> -->
+<!-- <script src="lrz/lrz.bundle.js"></script> -->
+
+<body>
+
+</body>
+<script>
+  var vConsole = new VConsole();
+</script>
+
+</html>

@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  #app {
+    background: url(../img/bg.png) #301717 no-repeat center center;
+    background-size: 100%;
+    font-family: "pingfang sc heavy";
+    height: 100%;
+    overflow: hidden;
+    .btn {
+      background: #a2edd1;
+      border: 4px solid #1b1b1b;
+      font-family: inherit;
+      padding: 0;
+      span {
+        background: #b04539;
+        border: 4px solid #1b1b1b;
+        display: block;
+        margin: 0;
+        -moz-transform: translate(4px, 4px);
+        -webkit-transform: translate(4px, 4px);
+        transform: translate(4px, 4px);
+      }
+    }
+  }
+}

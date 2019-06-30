@@ -1,0 +1,62 @@
+.page-content {
+  height: 100%;
+  padding-top: 26.56%;
+  position: relative;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    &.envelope {
+      width: 95.35%;
+    }
+  }
+  .page-guide {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .guide-content {
+      margin: 0 auto;
+      position: relative;
+      width: 90.5%;
+      .guide-text {
+        position: absolute;
+        top: 19%;
+        left: 20%;
+        right: 0;
+        bottom: 0;
+        p {
+          color: #9f3e34;
+          font-size: 0.36rem;
+          line-height: 0.44rem;
+          margin: 0;
+          &.section {
+            padding-top: 1em;
+          }
+        }
+        .btn {
+          display: block;
+          border-radius: 0.35rem;
+          font-size: 0.36rem;
+          line-height: 0.7rem;
+          position: absolute;
+          bottom: 10%;
+          left: 37.5%;
+          -moz-transform: translate(-50%);
+          -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+          span {
+            color: #9f3e34;
+            background: #f5c359!important;
+            border-radius: 0.35rem;
+            width: 5.7em;
+          }
+        }
+      }
+    }
+  }
+}

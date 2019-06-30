@@ -1,0 +1,53 @@
+.page-content {
+  height: 100%;
+  padding-top: 26.56%;
+  position: relative;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    &.envelope {
+      width: 95.35%;
+    }
+  }
+  .page-pic-right {
+    padding-top: 40%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .pic-title {
+      color: #2a1717;
+      font-size: 0.48rem;
+      line-height: 1;
+      margin: 0;
+      position: fixed;
+      top: 9.5%;
+      left: 9%;
+      transform: rotate(-15deg);
+    }
+    .success-bg {
+      margin: 0 auto;
+      position: relative;
+      width: 89.77%;
+      .success-bg-img {
+        display: block;
+        width: 100%;
+      }
+      .success-img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+    .pic-success {
+      color: #a13f35;
+      font-size: 0.6rem;
+      line-height: 2.3;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
