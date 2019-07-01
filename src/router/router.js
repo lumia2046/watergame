@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import { Route, Switch, hashHistory, HashRouter } from 'react-router-dom';
-import { createComponent } from 'router/Bundle';
-import Load from 'bundle-loader?lazy&name=[name]!pages/Load/Load';
-import Guide from 'bundle-loader?lazy&name=[name]!pages/Guide/Guide';
-import PicRight from 'bundle-loader?lazy&name=[name]!pages/PicRight/PicRight';
-import Seek from 'bundle-loader?lazy&name=[name]!pages/Seek/Seek';
-import ChoosePage from 'bundle-loader?lazy&name=[name]!pages/ChoosePage/ChoosePage';
-import Password from 'bundle-loader?lazy&name=[name]!pages/Password/Password';
+import { Route, Switch, hashHistory, HashRouter, Router } from 'react-router-dom';
+
+import Load from 'pages/Load/Load';
+import Guide from 'pages/Guide/Guide';
+import PicRight from 'pages/PicRight/PicRight';
+import Seek from 'pages/Seek/Seek';
+import ChoosePage from 'pages/ChoosePage/ChoosePage';
+import Password from 'pages/Password/Password';
+
+import createHistory from 'history/createHashHistory'
+
+const history = createHistory()
+
 
 class GetRouter extends Component {
   render() {
+
     return (
-      <HashRouter history={hashHistory}>
-        <Switch>
-          <Route exact path="/" component={createComponent(Load)}/>
-          <Route path="/guide" component={createComponent(Guide)}/>
-          <Route path="/pic-right" component={createComponent(PicRight)}/>
-          <Route path="/seek" component={createComponent(Seek)}/>
-          <Route path="/choose-page" component={createComponent(ChoosePage)}/>
-          <Route path="/password" component={createComponent(Password)}/>
-        </Switch>
-      </HashRouter>
+      <Router history={history}>
+        <Route render={({ location }) => {
+          console.log(location)
+          return <Switch>
+            <Route exact path="/" component={Load} />
+            <Route path="/guide" component={Guide} />
+            <Route path="/pic-right" component={PicRight} />
+            <Route path="/seek" component={Seek} />
+            <Route path="/choose-page" component={ChoosePage} />
+            <Route path="/password" component={Password} />
+          </Switch>
+        }
+        } />
+      </Router>
     )
   }
 }

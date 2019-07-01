@@ -11,8 +11,8 @@
     }
   }
   .page-load {
-    background: url(../img/mask.png) no-repeat center center;
-    background-size: 100%;
+    // background: url(../img/mask.png) no-repeat center center;
+    // background-size: 100%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -52,7 +52,7 @@
     }
     .btn {
       display: block;
-      border-radius: 0.4rem;
+      border-radius: 0.4em;
       font-size: 0.48rem;
       margin: 0 auto;
       position: absolute;
@@ -61,8 +61,10 @@
       bottom: 10%;
       width: 50%;
       span {
-        border-radius: 0.4rem;
+        color: #f5c359;
+        border-radius: 0.4em;
         line-height: 0.83rem;
+        text-shadow: 0px 0px 5px #000;
       }
     }
   }

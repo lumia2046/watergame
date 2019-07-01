@@ -34,6 +34,9 @@
           font-size: 0.36rem;
           line-height: 0.44rem;
           margin: 0;
+          -webkit-animation: ani 1s ease-in-out 0s 1 alternate forwards;
+          -moz-animation: ani 1s ease-in-out 0s 1 alternate forwards;
+          animation: ani 1s ease-in-out 0s 1 alternate forwards;
           &.section {
             padding-top: 1em;
           }
@@ -60,3 +63,31 @@
     }
   }
 }
+// @-webkit-keyframes ani {
+//   0% {
+//     option: 0;
+//     -webkit-transform: translateY(1em);
+//     -moz-transform: translateY(1em);
+//     transform: translateY(1em);
+//   }
+//   100% {
+//     option: 1;
+//     -webkit-transform: translateY(0em);
+//     -moz-transform: translateY(0em);
+//     transform: translateY(0em);
+//   }
+// }
+// @keyframes ani {
+//   0% {
+//     option: 0;
+//     -webkit-transform: translateY(1em);
+//     -moz-transform: translateY(1em);
+//     transform: translateY(1em);
+//   }
+//   100% {
+//     option: 1;
+//     -webkit-transform: translateY(0em);
+//     -moz-transform: translateY(0em);
+//     transform: translateY(0em);
+//   }
+// }

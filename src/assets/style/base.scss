@@ -22,5 +22,40 @@ body {
         transform: translate(4px, 4px);
       }
     }
+    .top-bar {
+      display: inline-block;
+      height: 1rem;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 3rem;
+      z-index: 0;
+      div {
+        float: left;
+        height: 1rem;
+        position: relative;
+        width: 1rem;
+        img {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -moz-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          &.return-icon {
+            width: 0.37rem;
+          }
+          &.music-icon {
+            top: 57%;
+            width: 0.59rem;
+          }
+          &.home-icon {
+            top: 48%;
+            width: 0.52rem;
+          }
+        }
+      }
+    }
   }
 }

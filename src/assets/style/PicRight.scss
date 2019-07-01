@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 0;
     .pic-title {
       color: #2a1717;
       font-size: 0.48rem;
@@ -48,6 +49,26 @@
       line-height: 2.3;
       margin: 0;
       text-align: center;
+    }
+    .pic-error {
+      color: #a13f35;
+      font-size: 0.36rem;
+      line-height: 2;
+      margin: 0;
+      text-align: center;
+    }
+    .btn {
+      display: block;
+      border-radius: 0.4rem;
+      font-size: 0.48rem;
+      line-height: 0.8rem;
+      margin: 1.5em auto auto auto!important;
+      span {
+        color: #9f3e34;
+        background: #f5c359!important;
+        border-radius: 0.4rem;
+        width: 8em;
+      }
     }
   }
 }
