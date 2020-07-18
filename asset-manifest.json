@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c6c89da0.chunk.css",
-    "main.js": "/static/js/main.5bc7c3b5.chunk.js",
-    "main.js.map": "/static/js/main.5bc7c3b5.chunk.js.map",
+    "main.js": "/static/js/main.02edfcb0.chunk.js",
+    "main.js.map": "/static/js/main.02edfcb0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec2b0ac6.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec2b0ac6.js.map",
-    "static/css/2.4785a2fb.chunk.css": "/static/css/2.4785a2fb.chunk.css",
+    "static/css/2.45e2aed0.chunk.css": "/static/css/2.45e2aed0.chunk.css",
     "static/js/2.6072db33.chunk.js": "/static/js/2.6072db33.chunk.js",
     "static/js/2.6072db33.chunk.js.map": "/static/js/2.6072db33.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0ed2d248b568ca5b12506929a8190706.js": "/precache-manifest.0ed2d248b568ca5b12506929a8190706.js",
+    "precache-manifest.cb9b416c5db94e4d91c0f26fdb2ed1ec.js": "/precache-manifest.cb9b416c5db94e4d91c0f26fdb2ed1ec.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.4785a2fb.chunk.css.map": "/static/css/2.4785a2fb.chunk.css.map",
+    "static/css/2.45e2aed0.chunk.css.map": "/static/css/2.45e2aed0.chunk.css.map",
     "static/css/main.c6c89da0.chunk.css.map": "/static/css/main.c6c89da0.chunk.css.map",
     "static/js/2.6072db33.chunk.js.LICENSE.txt": "/static/js/2.6072db33.chunk.js.LICENSE.txt",
     "static/media/alipay.png": "/static/media/alipay.67318d24.png",
@@ -20,9 +20,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ec2b0ac6.js",
-    "static/css/2.4785a2fb.chunk.css",
+    "static/css/2.45e2aed0.chunk.css",
     "static/js/2.6072db33.chunk.js",
     "static/css/main.c6c89da0.chunk.css",
-    "static/js/main.5bc7c3b5.chunk.js"
+    "static/js/main.02edfcb0.chunk.js"
   ]
 }
